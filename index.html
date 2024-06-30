@@ -1,0 +1,157 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manipulating the DOM</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main__hero">
+        <h1>Landing Page</h1>
+      </header>
+      <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section
+        id="section1"
+        data-nav="Introduction to Web Development"
+        class="your-active-class"
+      >
+        <div class="landing__container">
+          <h2>Introduction to Web Development</h2>
+          <p>
+            Web development is a field that involves building and maintaining
+            websites. It can range from creating simple static pages to complex
+            web applications and social network services. The process includes
+            web design, web content development, client-side/server-side
+            scripting, and network security configuration.
+          </p>
+          <p>
+            In this section, we will cover the basics of HTML, CSS, and
+            JavaScript. These are the fundamental technologies that you need to
+            learn in order to start building websites. HTML (HyperText Markup
+            Language) provides the structure of web pages. CSS (Cascading Style
+            Sheets) controls the presentation, formatting, and layout.
+            JavaScript adds interactivity and dynamic behavior to web pages.
+          </p>
+          <p>
+            Understanding these core technologies is essential for anyone
+            interested in becoming a web developer or enhancing their skills in
+            web development. Whether you're creating a personal blog, an
+            e-commerce site, or a web application, mastering HTML, CSS, and
+            JavaScript forms the foundation of your journey into web
+            development.
+          </p>
+        </div>
+      </section>
+
+      <section id="section2" data-nav="HTML Basics">
+        <div class="landing__container">
+          <h2>HTML Basics</h2>
+          <p>
+            HTML (HyperText Markup Language) is the standard markup language for
+            creating web pages. It defines the structure of web content using a
+            variety of tags and attributes. HTML elements are the building
+            blocks of HTML pages, which consist of headings, paragraphs, lists,
+            links, images, forms, and other elements.
+          </p>
+          <p>
+            In this section, we will delve deeper into the fundamentals of HTML.
+            We'll explore the anatomy of an HTML document, the purpose of
+            different HTML tags, and how to use them effectively. Understanding
+            HTML basics is crucial as it forms the foundation upon which you can
+            build more complex web pages and applications.
+          </p>
+          <p>
+            By the end of this section, you'll have a solid grasp of HTML
+            syntax, semantics, and best practices. You'll be equipped with the
+            knowledge to create well-structured web pages that are accessible,
+            responsive, and optimized for search engines.
+          </p>
+        </div>
+      </section>
+
+      <section id="section3" data-nav="CSS for Styling">
+        <div class="landing__container">
+          <h2>CSS for Styling</h2>
+          <p>
+            CSS (Cascading Style Sheets) is a stylesheet language used to
+            describe the presentation of a document written in HTML or XML. It
+            defines how HTML elements should be displayed on screen, in print,
+            or in other media. CSS allows web developers to control the layout,
+            colors, fonts, and other visual aspects of a web page.
+          </p>
+          <p>
+            In this section, we will explore the power of CSS in web
+            development. We'll cover CSS syntax, selectors, properties, and
+            values. You'll learn how to apply styles to elements, create
+            layouts, and achieve desired design effects. Understanding CSS is
+            essential for creating visually appealing and user-friendly web
+            interfaces.
+          </p>
+          <p>
+            By mastering CSS, you'll be able to customize the appearance of your
+            web pages to match your design vision. Whether you're aiming for a
+            minimalist aesthetic, a vibrant and colorful layout, or a
+            professional corporate look, CSS provides the tools to achieve your
+            styling goals effectively.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="section4"
+        data-nav="JavaScript for Interactivity"
+        class="your-active-class"
+      >
+        <div class="landing__container">
+          <h2>JavaScript for Interactivity</h2>
+          <p>
+            JavaScript is a versatile programming language used primarily for
+            creating dynamic and interactive elements on web pages. It enables
+            developers to add functionality such as form validation, animations,
+            interactive maps, and more. JavaScript runs client-side, meaning it
+            executes in the user's web browser, enhancing the user experience
+            without relying on server interaction.
+          </p>
+          <p>
+            In this section, we'll dive into the world of JavaScript and explore
+            its capabilities. We'll cover variables, data types, operators,
+            functions, and control structures. You'll learn how to manipulate
+            the Document Object Model (DOM), handle events, and interact with
+            APIs (Application Programming Interfaces).
+          </p>
+          <p>
+            By the end of this section, you'll have the skills to build
+            interactive web applications that respond to user actions in
+            real-time. JavaScript's versatility and ease of use make it a
+            fundamental tool for modern web development, empowering developers
+            to create engaging and dynamic web experiences.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+    </footer>
+  </body>
+  <script src="js/app.js"></script>
+</html>
